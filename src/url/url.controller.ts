@@ -27,7 +27,7 @@ export class UrlController {
 
     return {
       originalUrl: result.originalUrl,
-      shortUrl: `${baseUrl}/r/${result.shortCode}`,
+      shortUrl: `${baseUrl}/api/r/${result.shortCode}`,
     };
   }
 
