@@ -12,7 +12,7 @@ import { CreateUrlDto } from './create-url.dto';
 import { ConfigService } from '@nestjs/config';
 import { ApiOperation, ApiParam, ApiResponse } from '@nestjs/swagger';
 
-@Controller('api') // 👈 This means: base path = /api
+@Controller('api')
 export class UrlController {
   constructor(
     private readonly urlService: UrlService,
@@ -32,7 +32,7 @@ export class UrlController {
   }
 
   @Get('/r/:code')
-  @Redirect() // 👈 ye magic karega
+  @Redirect()
   async redirect(@Param('code') code: string) {
     const url = await this.urlService.getByCode(code);
     if (!url) throw new NotFoundException('Short URL not found');
@@ -53,7 +53,7 @@ export class UrlController {
     const baseUrl = process.env.BASE_URL;
     return {
       originalUrl: url.originalUrl,
-      shortUrl: `${baseUrl}/r/${url.shortCode}`,
+      shortUrl: `${baseUrl}/api/r/${url.shortCode}`,
       clicks: url.clicks,
     };
   }

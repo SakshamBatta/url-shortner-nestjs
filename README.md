@@ -34,7 +34,7 @@ It allows users to shorten long URLs, optionally define a custom short code, get
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/url-shortener-nestjs.git
+git clone https://github.com/SakshamBatta/url-shortner-nestjs.git
 cd url-shortener-nestjs
 npm install
 ```
@@ -87,3 +87,11 @@ Response:
 "shortUrl": "http://localhost:3000/r/my-link",
 "clicks": 5
 }
+
+## DEPLOYED LINK -
+
+https://url-shortner-7mi8.onrender.com/
+
+## SWAGGER UI LINK -
+
+https://url-shortner-7mi8.onrender.com/docs
