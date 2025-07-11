@@ -95,3 +95,7 @@ https://url-shortner-7mi8.onrender.com/
 ## SWAGGER UI LINK -
 
 https://url-shortner-7mi8.onrender.com/docs
+
+## DEMO VIDEO LINK
+
+https://drive.google.com/file/d/1gBvTJjwlob3Zoki4jyU-mojRILNuIvj8/view?usp=sharing
